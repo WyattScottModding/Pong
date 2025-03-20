@@ -40,9 +40,9 @@ int main(int argc, char* argv[])
         Server::StartServer();
     } else if (choice == 'J' || choice == 'j') {
         // Start as client
-        std::string serverIP = "172.30.0.1";
-        //std::cout << "Enter server IP: ";
-        //std::cin >> serverIP;
+        std::string serverIP = "";
+        std::cout << "Enter server IP: ";
+        std::cin >> serverIP;
         
         Server::StartClient(serverIP);
     } else {
